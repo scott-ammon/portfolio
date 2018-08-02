@@ -6,12 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Zilla Slab:400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
+    <nav class="transparent-bg">
+        <div class="nav-wrapper">
+          <a href="/" class="black-text brand-logo">SA</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="black-text" href="/portfolio">Portfolio</a></li>
+            <li><a class="black-text" href="/about">About</a></li>
+            <li><a class="black-text" href="/resume">Resume</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Materialize nav bar for small devices -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/resume">Resume</a></li>
+      </ul>
+      
     <div class="container">
-        <%- body %>
+      <%- body %>
+
+      <!-- Contact Button -->
+      <a id="menu" class="contact waves-effect waves-light btn btn-floating" ><i class="material-icons">add</i></a>
     </div>
     
 	  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
