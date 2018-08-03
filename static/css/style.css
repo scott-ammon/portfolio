@@ -1,24 +1,47 @@
 body {
   margin: 0;
+  position: relative;
   height: 100vh;
   width: 100vw;
-  font-family: "Open Sans", sans-serif;
-  background-color: #F0F0F0;
-}
-
-.transparent-bg {
-  background-color: rgba(0, 0, 0, 0);
-  box-shadow: none;
+  font-family: "Open Sans", sans-serif; 
 }
 
 .container {
-  position: relative;
-  /* background-color: white;
-  border-radius: 3em;
-  margin: 2.5vh auto;
-  overflow: auto;
-  height: 90%;
-  width: 97%; */
+  margin-top: 3em;
+}
+
+.nav {
+  text-align: right;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.nav a {
+  padding: 0.7rem;
+  text-decoration: none;
+}
+
+.logo {
+  float: left;
+  margin: .1em 0 0 .25em;
+  text-decoration: none;
+}
+
+/* ================= Clearfix =================== */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
 }
 
 .contact {
@@ -28,50 +51,23 @@ body {
   background-color: #2E5FCE;
 }
 
-nav ul {
-  margin-right: 2em;
-}
-
-nav .brand-logo {
-  margin-left: 1em;
-}
-
-@media (max-width: 600px) {
-  nav .brand-logo {
-    margin-left: 0;
-  }
-}
-
 .headline {
   font-family: "Zilla Slab", sans-serif;
   text-align: center;
-  margin-top: 30vh;
 }
 
 .name-line {
   margin: 0;
   font-size: 5em;
   font-weight: 600;
-  color: #2E5FCE;
+  color: black;
 }
 
 .tagline {
   margin: 1em;
+  color: white;
   font-size: 1.8rem;
   font-weight: 400;
-}
-
-header {
-  display: inline-block;
-  overflow: auto;
-  text-align: center;
-}
-
-.logo {
-  border: 1px solid black;
-  border-radius: 1em;
-  padding: 1em;
-  margin-bottom: 3em;
 }
 
 /* ==================== ABOUT PAGE ===================== */
