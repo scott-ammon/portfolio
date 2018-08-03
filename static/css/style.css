@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  margin-top: 3em;
+  /* margin-top: 3em; */
 }
 
 .nav {
@@ -19,12 +19,14 @@ body {
 .nav a {
   padding: 0.7rem;
   text-decoration: none;
+  color: black;
 }
 
 .logo {
   float: left;
   margin: .1em 0 0 .25em;
   text-decoration: none;
+  color: white;
 }
 
 /* ================= Clearfix =================== */
@@ -53,21 +55,56 @@ body {
 
 .headline {
   font-family: "Zilla Slab", sans-serif;
+  margin-top: 30vh;
   text-align: center;
 }
 
 .name-line {
+  text-align: right;
   margin: 0;
-  font-size: 5em;
+  font-size: 7em;
   font-weight: 600;
-  color: black;
+}
+
+.scott {
+  text-align: right;
+  margin-right: .25em;
+  color: white;
+}
+
+.ammon {
+  text-align: left;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  color: #2E5FCE;
 }
 
 .tagline {
-  margin: 1em;
-  color: white;
+  margin-left: 1rem;
+  text-align: left;
+  color: black;
   font-size: 1.8rem;
   font-weight: 400;
+}
+
+/* ============= MAIN PAGE BACKGROUND DIVS ============= */
+.grid-container {
+  display: grid;
+  grid-template-columns: 33vw 67vw;
+  grid-template-rows: 100vh;
+}
+
+.left-one-third {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  background-color: #2E5FCE;
+}
+
+.right-two-thirds {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
 }
 
 /* ==================== ABOUT PAGE ===================== */
