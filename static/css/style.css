@@ -3,17 +3,27 @@ body {
   position: relative;
   height: 100vh;
   width: 100vw;
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Raleway", sans-serif; 
 }
 
 .container {
-  /* margin-top: 3em; */
+  width: 100vw;
+  height: 95vh;
+  padding: 0 50px 50px 50px;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
 }
 
 .nav {
-  text-align: right;
+  /* text-align: right; */
   margin-top: 1em;
-  margin-right: 1em;
+  margin-right: 2.5rem;
 }
 
 .nav a {
@@ -23,27 +33,27 @@ body {
 }
 
 .logo {
-  float: left;
-  margin: .1em 0 0 .25em;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
-/* ================= Clearfix =================== */
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-  position: fixed; 
-  top: 0; 
-  width: 100%;
+@media (max-width: 600px) {
+  .header {
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
+    height: 10vh;
+  }
+  .logo,
+  .nav {
+    margin: 0;
+  }
+  .container {
+    padding: 20px;
+  }
+
 }
 
 .contact {
@@ -80,18 +90,19 @@ body {
 }
 
 .tagline {
-  margin-left: 1rem;
+  margin: 0 0 0 1rem;
   text-align: left;
   color: black;
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
 /* ============= MAIN PAGE BACKGROUND DIVS ============= */
 .grid-container {
   display: grid;
-  grid-template-columns: 33vw 67vw;
-  grid-template-rows: 100vh;
+  height: 100%;
+  grid-template-columns: 33% 67%;
+  grid-template-rows: auto;
 }
 
 .left-one-third {
@@ -105,6 +116,7 @@ body {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
+  background-color: #F5F5F5;
 }
 
 /* ==================== ABOUT PAGE ===================== */
