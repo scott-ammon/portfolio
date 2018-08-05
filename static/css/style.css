@@ -7,13 +7,12 @@ body {
 }
 
 .container {
-  width: 100vw;
-  height: 95vh;
-  padding: 0 50px 50px 50px;
-  box-sizing: border-box;
+  margin: 0 auto;
+  width: 60vw;
 }
 
 .header {
+  border: 1px solid black;
   width: 100vw;
   display: flex;
   height: 50px;
@@ -25,15 +24,14 @@ body {
   margin-right: 2.5rem;
 }
 
-.nav a {
-  padding: 0.7rem;
-  text-decoration: none;
-  color: black;
+.logo {
+  margin-left: 2.5rem;
+  margin-top: 1em;
 }
 
-.logo {
-  margin-left: 1.5rem;
-  margin-top: 0.5rem;
+.nav a,
+div .logo {
+  padding: 0.7rem;
   text-decoration: none;
   color: black;
 }
@@ -43,39 +41,21 @@ body {
   bottom: 1rem;
   right: 1rem;
   background-color: #17c37b; 
-  /* #2E5FCE; */
 }
 
 .headline {
   font-family: "Zilla Slab", sans-serif;
-  margin-top: 20vh;
+  margin-top: 5vh;
   text-align: center;
 }
 
 .name-line {
-  text-align: right;
   margin: 0;
   font-size: 7em;
   font-weight: 600;
 }
 
-.scott {
-  text-align: right;
-  margin-right: 1rem;
-  color: black;
-}
-
-.ammon {
-  text-align: left;
-  margin-left: 1rem;
-  margin-bottom: 0;
-  color: black;
-}
-
 .tagline {
-  margin: 0 0 0 1rem;
-  text-align: left;
-  color: black;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -91,30 +71,41 @@ span {
 }
 
 /* ============= MAIN PAGE BACKGROUND DIVS ============= */
-.grid-container {
-  display: grid;
-  height: 100%;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
+
+/* ==================== ABOUT PAGE ===================== */
+.flex-container {
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
 }
 
-.left-one-third {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  background-color: #17c37b;
-  border-bottom-left-radius: 1em;
-  border-top-left-radius: 1em;
+.about-name {
+  margin: 0;
+  /* padding-left: 2rem; */
+  font-size: 3em;
+  font-family: "Zilla Slab", sans-serif;
+  font-weight: 600;
 }
 
-.right-two-thirds {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  background-color: #F9F9F9;
-  border-bottom-right-radius: 1em;
-  border-top-right-radius: 1em;
+.about-desc {
+  margin: 0;
+  /* padding-left: 2rem; */
+  font-family: "Zilla Slab", sans-serif;
+  font-weight: 400;
 }
+
+.about-content {
+  padding: 2em;
+  background-color: #F0F0F0;
+}
+
+.about-img {
+  margin-top: 15px auto;
+}
+
+/* ==================== MEDIA QUERIES ===================== */
 
 @media (max-width: 600px) {
   .header {
@@ -129,7 +120,7 @@ span {
     margin: 0.25rem 0 0 0;
   }
   .container {
-    padding: 20px;
+    width: 90vw;
   }
   .name-line {
     font-size: 2em;
@@ -140,50 +131,11 @@ span {
   .grid-container {
     grid-template-rows: 70%;
   }
+  .flex-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  img {
+    max-height: 300px;
+  }
 }
-
-
-/* ==================== ABOUT PAGE ===================== */
-.about-header {
-  border-top-left-radius: 2rem;
-  background-color: #17c37b; 
-}
-.about-name {
-  margin: 0;
-  padding-left: 2rem;
-  font-size: 3em;
-  font-family: "Zilla Slab", sans-serif;
-  font-weight: 600;
-  color: white;
-}
-
-.about-desc {
-  margin: 0;
-  padding-left: 2rem;
-  font-family: "Zilla Slab", sans-serif;
-  font-weight: 400;
-  color: white;
-}
-
-.about-content {
-  padding: 2em;
-  background-color: #F0F0F0;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-}
-
-#about-portrait {
-  padding: 0;
-}
-
-.about-row {
-  margin: 0;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-/* ==================== PORTFOLIO ===================== */
-
