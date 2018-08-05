@@ -8,14 +8,17 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 60vw;
+  width: 70vw;
 }
 
 .header {
-  border: 1px solid black;
-  width: 100vw;
   display: flex;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 50px;
+  background: white;
   justify-content: space-between;
 }
 
@@ -51,8 +54,8 @@ div .logo {
 
 .name-line {
   margin: 0;
-  font-size: 7em;
-  font-weight: 600;
+  font-size: 4em;
+  font-weight: 400;
 }
 
 .tagline {
@@ -70,12 +73,54 @@ span {
   padding: .25rem;
 }
 
-/* ============= MAIN PAGE BACKGROUND DIVS ============= */
+/* ================ MAIN PAGE PROJECTS ================= */
+.flex-projects {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project {
+  position: relative;
+  padding: 1rem;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  /* height: 100%;
+  width: 100%; */
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #222;
+}
+
+.project:hover .project-overlay {
+  opacity: 1;
+}
+
+.proj-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+}
 
 /* ==================== ABOUT PAGE ===================== */
 .flex-container {
   display: flex;
-  border: 1px solid red;
+  margin-top: 50px;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;

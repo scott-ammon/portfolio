@@ -20,11 +20,9 @@ app.get('/about', (req, res) => {
 	res.render('about');
 });
 
-app.get('/portfolio', (req, res) => {
-	res.render('portfolio/index');
+app.get('/portfolio/p1', (req, res) => {
+	res.render('portfolio/p1');
 });
-
-
 
 app.get('/resume', (req, res) => {
 	res.sendFile(__dirname+ '/static/resume/Scott_Ammon_Resume.pdf');
