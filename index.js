@@ -20,9 +20,34 @@ app.get('/about', (req, res) => {
 	res.render('about');
 });
 
-app.get('/portfolio/p1', (req, res) => {
+app.get('/contact', (req, res) => {
+	res.render('contact');
+});
+
+app.get('/project1', (req, res) => {
 	res.render('portfolio/p1');
 });
+
+app.get('/project2', (req, res) => {
+	res.render('portfolio/p2');
+});
+
+app.get('/project3', (req, res) => {
+	res.render('portfolio/p2');
+});
+
+app.get('/project4', (req, res) => {
+	res.render('portfolio/p4');
+});
+
+app.get('/sp1', (req, res) => {
+	res.render('portfolio/sp1');
+});
+
+app.get('/sp2', (req, res) => {
+	res.render('portfolio/sp2');
+});
+
 
 app.get('/resume', (req, res) => {
 	res.sendFile(__dirname+ '/static/resume/Scott_Ammon_Resume.pdf');
