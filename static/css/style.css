@@ -4,8 +4,8 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: "Open Sans", sans-serif;
-  /* background: black;
-  color: white; */
+  background: #0E3B81;
+  color: white;
 }
 
 .container {
@@ -20,7 +20,6 @@ body {
   top: 0;
   width: 100%;
   height: 50px;
-  background: white;
   justify-content: space-between;
 }
 
@@ -38,7 +37,7 @@ body {
 div .logo {
   padding: 0.7rem;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .title {
@@ -76,13 +75,13 @@ span {
   font-family: "Raleway", sans-serif;
   font-size: 5em;
   margin: 0;
-  color: black;
+  color: white;
 }
 
 .proj-text p {
   font-size: 1em;
   margin: 0;
-  color: black;
+  color: white;
   display: inline;
   height: 100%;
   vertical-align: center;
@@ -96,6 +95,105 @@ a {
 }
 
 .proj-text h3:hover {
+  transition: color 0.5s ease;
+  color: rgb(74, 231, 205);
+}
+
+/* =================== PROJECT PAGE ==================== */
+.title-container {
+  width: 100vw;
+  padding: 10em 0 2em 0;
+  background: white;
+}
+
+.proj-title {
+  width: 50vw;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 3em;
+  color: black;
+  vertical-align: middle;
+}
+
+.proj-title h1 {
+  margin: 0;
+}
+
+.proj-img-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+}
+
+.proj-section {
+  width: 100vw;
+  background: white;
+}
+
+.front-flex,
+.back-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tech-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.front-flex h4,
+.back-flex h4 {
+  margin: 0;
+}
+
+.proj-desc {
+  width: 50vw;
+  padding: 2em 0;
+  margin: 0 auto;
+  color: black;
+}
+
+.proj-links {
+  height: 4em;
+  text-align: center;
+  background: white;
+}
+
+.proj-links a {
+  margin: 0 1em;
+  padding: .5em;
+  border: 1px solid #0E3B81;
+  border-radius: .25em;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  color: #0E3B81;
+}
+
+.proj-links a:hover {
+  transition: background 0.7s ease;
+  background: #0E3B81;
+  color: white;
+}
+
+.proj-footer {
+  width: 90vw;
+  margin: 2em auto 0 auto;
+  text-align: center;
+}
+
+.proj-footer a {
+  display: inline;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+}
+
+.proj-footer a:hover {
   transition: color 0.5s ease;
   color: rgb(74, 231, 205);
 }
@@ -202,5 +300,47 @@ a {
   }
   .proj-text h3 {
     font-size: 2em;
+  }
+
+  /* Individual Project Page */
+  .title-container {
+    padding: 4em 0 1em 0;
+  }
+
+  .proj-title {
+    width: 90vw;
+    font-size: 1.5em;
+  }
+
+  .front-flex,
+  .back-flex {
+    flex-direction: column;
+  }
+  
+  .tech-flex {
+    flex-direction: column;
+  }
+
+  .tech-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .tech-list p {
+    margin: 0;
+  }
+
+  .proj-desc {
+    width: 90vw;
+  }
+
+  .proj-img-flex img {
+    max-width: 100%;
+    margin-bottom: 2em 0;
+  }
+
+  .proj-footer a {
+    font-size: 1em;
   }
 }
