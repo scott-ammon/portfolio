@@ -3,7 +3,8 @@ body {
   position: relative;
   height: 100vh;
   width: 100vw;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 .container {
@@ -19,13 +20,17 @@ body {
 /* ============== Nav Bar Styles ============== */
 .navbar {
   position: fixed;
-  top: 6px;
-  right: 6px;
+  top: 1em;
+  left: 1em;
   box-sizing: border-box;
-  width: 60px;
-  height: 50px;
-  border-radius: .5em;
-  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 8px solid rgb(74, 231, 205);
+}
+
+.navbar:hover {
+  background-color: rgb(74, 231, 205);
 }
 
 .hamburger {
@@ -57,7 +62,7 @@ body {
 .nav-links,
 .contact {
   width: 300px;
-  margin-left: 1em;
+  margin-left: 15vw;
   text-align: left;
 }
 
@@ -70,7 +75,7 @@ body {
   font-family: "Raleway", sans-serif;
   color: black;
   font-size: 1.75em;
-  padding-bottom: .75em;
+  padding-bottom: .5em;
 }
 
 .contact a {
@@ -88,10 +93,9 @@ body {
   margin-top: 50px;
 }
 
-.section-title h1 {
+.section-title h3 {
   margin: 0;
-  font-size: 1em;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .links {
@@ -105,13 +109,15 @@ body {
 }
 
 .headline {
-  padding-top: 2em;
+  padding-top: 2.5em;
+  font-size: 2.25em;
   margin: 0;
   color: rgb(74, 231, 205);
 }
 
 .tagline {
   margin-top: 0;
+  font-weight: 300;
   color: white;
 }
 
@@ -182,6 +188,11 @@ a {
   align-items: center;
 }
 
+.proj-img-flex img {
+  max-width: 100%;
+  margin-bottom: 2em;
+}
+
 .tech-list {
   display: flex;
   flex-direction: column;
@@ -232,7 +243,7 @@ a {
 }
 
 .proj-footer {
-  margin: 5em auto 0 auto;
+  margin: 2em auto 0 auto;
   padding: 1em 0;
   text-align: center;
   background: #0E3B81;
@@ -246,7 +257,7 @@ a {
   color: white;
 }
 
-.proj-footer a:hover {
+.proj-footer:hover a {
   transition: color 0.5s ease;
   color: rgb(74, 231, 205);
 }
@@ -274,14 +285,14 @@ a {
 }
 
 .flex-skills p {
+  margin: .25em 0;
   color: rgba(0, 0, 0, 0.75);
 }
 
 .about-name {
   margin: 0;
-  font-size: 3em;
-  font-family: "Zilla Slab", sans-serif;
-  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.25em;
 }
 
 .about-header {
@@ -295,8 +306,6 @@ a {
 
 .about-desc {
   margin: 0;
-  font-family: "Zilla Slab", sans-serif;
-  font-weight: 400;
 }
 
 .about-content {
@@ -317,9 +326,14 @@ a {
 /* ==================== MEDIA QUERIES ===================== */
 /* desktop size */
 @media (max-width: 980px) {
- .container {
-   width: 80vw;
- }
+  .container {
+    width: 80vw;
+  }
+
+  .nav-links,
+  .contact {
+    margin-left: 10vw;
+  }
 
  .proj-container {
    width: 70vw;
@@ -344,6 +358,11 @@ a {
 
   .proj-container {
     width: 90vw;
+  }
+
+  .nav-links,
+  .contact {
+    margin-left: 5vw;
   }
 }
 

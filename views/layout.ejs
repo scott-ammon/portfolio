@@ -4,7 +4,7 @@
     <title>Scott Ammon | Web Dev</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:400,800" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link href="css/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -12,9 +12,9 @@
   </head>
   <body>  
     <header class="navbar">
-      <button class="hamburger hamburger--spring" type="button">
+      <!-- <button class="hamburger hamburger--spring" type="button">
           <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-      </button>  
+      </button>   -->
     </header>
 
     <nav id="nav-menu">
@@ -22,14 +22,16 @@
         <a href="/">Projects</a>
         <a href="/about">About</a>
         <a href="/resume">Resume</a>
+        <div class="bottom-border"></div>
       </div>
+      
       <div class="contact">
-        <a href="https://github.com/scott-ammon"><img src="./img/github.png"></a>
-        <a href="https://www.linkedin.com/in/scottammon/"><img src="./img/linkedin.png"></a>
+        <a href="https://github.com/scott-ammon" target="_blank"><img src="./img/github.png"></a>
+        <a href="https://www.linkedin.com/in/scottammon/" target="_blank"><img src="./img/linkedin.png"></a>
         <a href="mailto:scott.o.ammon@gmail.com"><img src="./img/mail.png"></a>
       </div>
     </nav>
-    
+
     <main>
       <%- body %>
     </main>
