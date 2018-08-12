@@ -4,8 +4,6 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: "Open Sans", sans-serif;
-  background: #0E3B81;
-  color: white;
 }
 
 .container {
@@ -13,49 +11,53 @@ body {
   width: 70vw;
 }
 
-.header {
-  display: flex;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 50px;
-  justify-content: space-between;
+/* ============== Nav Bar Styles ============== */
+
+#nav-menu {
+  display: none;
+  /* position: absolute; */
+  /* top: 59px; */
+  /* left: 0; */
+  background: white;
 }
 
-.nav {
-  margin-top: 1em;
-  margin-right: 2.5rem;
+*:focus {
+  outline: none;
 }
 
-.logo {
-  margin-left: 2.5rem;
-  margin-top: 1em;
+.nav-links,
+.contact {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.nav a,
-div .logo {
-  padding: 0.7rem;
-  text-decoration: none;
-  color: white;
+.nav-links a {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-size: 1.75em;
+  padding-bottom: .75em;
+}
+
+.contact a {
+  width: 32px;
+  height: 32px;
+}
+
+.contact a img {
+  padding: .5em;
+  width: 32px;
+  height: 32px;
 }
 
 .title {
   margin-top: 50px;
 }
 
-.headline {
-  margin-top: 10vh;
-}
-
 .section-title h1 {
   margin: 0;
   font-size: 1em;
-  font-weight: 400;
-}
-
-.tagline {
-  font-size: 1.25rem;
   font-weight: 400;
 }
 
@@ -66,10 +68,14 @@ div .logo {
 
 span {
   background-color: white;
-  padding: .25rem;
 }
 
 /* ================ MAIN PAGE PROJECTS ================= */
+.main-page-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0E3B81;
+}
 .proj-text h3 {
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -103,7 +109,6 @@ a {
 .title-container {
   width: 100vw;
   padding: 10em 0 2em 0;
-  background: white;
 }
 
 .proj-title {
@@ -111,7 +116,6 @@ a {
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
   font-size: 3em;
-  color: black;
   vertical-align: middle;
 }
 
@@ -124,12 +128,10 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: white;
 }
 
 .proj-section {
   width: 100vw;
-  background: white;
 }
 
 .front-flex,
@@ -153,13 +155,11 @@ a {
   width: 50vw;
   padding: 2em 0;
   margin: 0 auto;
-  color: black;
 }
 
 .proj-links {
   height: 4em;
   text-align: center;
-  background: white;
 }
 
 .proj-links a {
@@ -190,7 +190,6 @@ a {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-size: 2em;
-  color: white;
 }
 
 .proj-footer a:hover {
@@ -200,33 +199,48 @@ a {
 
 
 /* ==================== ABOUT PAGE ===================== */
+.about {
+  margin-top: 1em;
+  width: 60vw;
+}
+
 .flex-about {
   display: flex;
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: flex-start;
-  width: 75%;
 }
 
 .flex-skills {
   display: flex;
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
   justify-content: space-around;
   align-items: flex-start;
   width: 75%;
 }
 
+.flex-skills p {
+  color: rgba(0, 0, 0, 0.75);
+}
+
 .about-name {
   margin: 0;
-  /* padding-left: 2rem; */
   font-size: 3em;
   font-family: "Zilla Slab", sans-serif;
   font-weight: 600;
 }
 
+.about-header {
+  margin: 2em;
+}
+
+.about-header p {
+  line-height: 2em;
+  color: rgba(0, 0, 0, 0.75);
+}
+
 .about-desc {
   margin: 0;
-  /* padding-left: 2rem; */
   font-family: "Zilla Slab", sans-serif;
   font-weight: 400;
 }
@@ -241,65 +255,68 @@ a {
 }
 
 .about-img img {
-  border-radius: 1em;
-}
-
-/* ======================= CONTACT ======================== */
-.contact {
-  width: 100%;
-  margin-top: 20vh;
-  text-align: left;
-}
-
-.contact h3 {
-  display: inline;
-}
-
-.icon {
-  width: 32px;
-  height: 32px;
+  border-radius: .5em;
+  margin: 2em;
+  max-height: 300px;
 }
 
 /* ==================== MEDIA QUERIES ===================== */
+/* desktop size */
+@media (max-width: 980px) {
+ .container {
+   width: 80vw;
+ }
 
-@media (max-width: 600px) {
+ .flex-about {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* tablet size */
+@media (max-width: 750px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+/* mobile devices */
+@media (max-width: 500px) {
+  /* .container {
+    width: 90vw;
+  } */
+
   .header {
     margin: 0;
     text-align: center;
     flex-direction: column;
   }
+
   .logo {
     margin: 0.5rem 0 0 0;
   }
+
   .nav {
     margin: 0.25rem 0 0 0;
   }
-  .container {
-    width: 90vw;
-  }
-  .name-line {
-    font-size: 2em;
-  }
-  .tagline {
-    font-size: 1em;
-  }
-  .grid-container {
-    grid-template-rows: 70%;
-  }
-  .flex-about {
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 100%;
-  }
+
   .flex-skills {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  img {
-    max-height: 300px;
-  }
+
   .proj-text h3 {
     font-size: 2em;
+  }
+
+  /* About Page */
+  .about-header {
+    margin: 0;
+  }
+
+  .about-img img {
+    margin: 0 0 2em 0;
   }
 
   /* Individual Project Page */

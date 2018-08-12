@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Scott Ammon</title>
+    <title>Scott Ammon | Web Dev</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="css/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" />
   </head>
-
-  <body>
-    <header class="header">
-      <div class="logo">
-        <a href="/">SCOTT AMMON</a>
-      </div>
-          
-      <nav class="nav">
-        <a href="/about">ABOUT</a>
-        <a href="/contact">CONTACT</a>
-        <a href="/resume">RESUME</a>
-      </nav>
+  <body>  
+    <header class="navbar">
+      <button class="hamburger hamburger--spring" type="button">
+          <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+      </button>  
     </header>
-    
-      
-    <div>
-      <%- body %>
-    </div>
 
-	  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <main>
+        <nav id="nav-menu">
+            <div class="nav-links">
+              <a href="/">Projects</a>
+              <a href="/about">About</a>
+              <a href="/resume">Resume</a>
+            </div>
+            <div class="contact">
+              <a href="https://github.com/scott-ammon"><img src="./img/github.png"></a>
+              <a href="https://www.linkedin.com/in/scottammon/"><img src="./img/linkedin.png"></a>
+              <a href="mailto:scott.o.ammon@gmail.com"><img src="./img/mail.png"></a>
+            </div>
+          </nav>
+      <%- body %>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 	  <script src='../js/main.js'></script>
   </body>
 </html>
