@@ -11,13 +11,42 @@ body {
   width: 70vw;
 }
 
+.proj-container {
+  margin: 0 auto;
+  width: 60vw;
+}
+
 /* ============== Nav Bar Styles ============== */
+.navbar {
+  position: fixed;
+  top: 6px;
+  right: 6px;
+  box-sizing: border-box;
+  width: 60px;
+  height: 50px;
+  border-radius: .5em;
+  background-color: white;
+}
+
+.hamburger {
+  color: white !important;
+}
+
+.navbar button {
+  position: relative;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
 
 #nav-menu {
   display: none;
-  /* position: absolute; */
-  /* top: 59px; */
-  /* left: 0; */
+  /* height: 100vh;
+  width: 50vw;
+  position: absolute;
+  top: 59px;
+  left: 0; */
   background: white;
 }
 
@@ -28,8 +57,12 @@ body {
 .nav-links,
 .contact {
   width: 300px;
-  margin: 0 auto;
-  text-align: center;
+  margin-left: 1em;
+  text-align: left;
+}
+
+.nav-links {
+  margin-top: 4.5em;
 }
 
 .nav-links a {
@@ -66,16 +99,42 @@ body {
   margin-left: 1rem;
 }
 
-span {
-  background-color: white;
+/* ================ HOME PAGE  ================= */
+.section-title {
+  color: white;
 }
 
-/* ================ MAIN PAGE PROJECTS ================= */
+.headline {
+  padding-top: 2em;
+  margin: 0;
+  color: rgb(74, 231, 205);
+}
+
+.tagline {
+  margin-top: 0;
+  color: white;
+}
+
+.bottom-border {
+  width: 4em;
+  margin: .5em 0 1em 0;
+  border-bottom: 4px solid rgb(74, 231, 205);
+}
+
+.section-title {
+  margin-top: 3em;
+}
+
+.project {
+  margin-bottom: .25em;
+}
+
 .main-page-background {
   width: 100vw;
   height: 100vh;
   background-color: #0E3B81;
 }
+
 .proj-text h3 {
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -87,13 +146,9 @@ span {
 .proj-text p {
   font-size: 1em;
   margin: 0;
+  height: 300px;
   color: white;
-  display: inline;
-  height: 100%;
-  vertical-align: center;
   display: none;
-  transition: opacity 0.5s ease;
-  opacity: 1;
 }
 
 a {
@@ -107,16 +162,13 @@ a {
 
 /* =================== PROJECT PAGE ==================== */
 .title-container {
-  width: 100vw;
-  padding: 10em 0 2em 0;
+  padding: 5em 0 2em 0;
 }
 
 .proj-title {
-  width: 50vw;
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
   font-size: 3em;
-  vertical-align: middle;
 }
 
 .proj-title h1 {
@@ -130,44 +182,44 @@ a {
   align-items: center;
 }
 
-.proj-section {
-  width: 100vw;
-}
-
-.front-flex,
-.back-flex {
+.tech-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: left;
 }
 
 .tech-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
+  margin: .5em 0;
 }
 
-.front-flex h4,
-.back-flex h4 {
-  margin: 0;
+.tech-flex p {
+  margin: 0 1.5em 0 0;
+}
+
+.tech-title {
+  font-weight: bold;
 }
 
 .proj-desc {
-  width: 50vw;
-  padding: 2em 0;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 .proj-links {
   height: 4em;
-  text-align: center;
+  text-align: left;
 }
 
 .proj-links a {
-  margin: 0 1em;
+  display: inline-block;
+  margin: 0 1em 0 0;
   padding: .5em;
-  border: 1px solid #0E3B81;
-  border-radius: .25em;
+  width: 6em;
+  border: 2px solid #0E3B81;
+  border-radius: .5em;
   text-decoration: none;
+  text-align: center;
   font-size: 1em;
   font-family: "Raleway", sans-serif;
   color: #0E3B81;
@@ -180,9 +232,10 @@ a {
 }
 
 .proj-footer {
-  width: 90vw;
-  margin: 2em auto 0 auto;
+  margin: 5em auto 0 auto;
+  padding: 1em 0;
   text-align: center;
+  background: #0E3B81;
 }
 
 .proj-footer a {
@@ -190,6 +243,7 @@ a {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-size: 2em;
+  color: white;
 }
 
 .proj-footer a:hover {
@@ -200,7 +254,7 @@ a {
 
 /* ==================== ABOUT PAGE ===================== */
 .about {
-  margin-top: 1em;
+  margin-top: 4em;
   width: 60vw;
 }
 
@@ -267,16 +321,28 @@ a {
    width: 80vw;
  }
 
+ .proj-container {
+   width: 70vw;
+ }
+
  .flex-about {
     flex-direction: column-reverse;
     align-items: center;
     width: 100%;
+  }
+
+  .proj-title h1 {
+    font-size: 1.5em;
   }
 }
 
 /* tablet size */
 @media (max-width: 750px) {
   .container {
+    width: 90vw;
+  }
+
+  .proj-container {
     width: 90vw;
   }
 }
@@ -307,7 +373,7 @@ a {
   }
 
   .proj-text h3 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   /* About Page */
@@ -321,35 +387,23 @@ a {
 
   /* Individual Project Page */
   .title-container {
-    padding: 4em 0 1em 0;
+    padding: 5em 0 1em 0;
   }
 
   .proj-title {
-    width: 90vw;
     font-size: 1.5em;
-  }
-
-  .front-flex,
-  .back-flex {
-    flex-direction: column;
-  }
-  
-  .tech-flex {
-    flex-direction: column;
   }
 
   .tech-list {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
-  .tech-list p {
-    margin: 0;
-  }
-
-  .proj-desc {
-    width: 90vw;
+  .tech-flex {
+    flex-direction: column;
+    margin-right: 2em;
   }
 
   .proj-img-flex img {
