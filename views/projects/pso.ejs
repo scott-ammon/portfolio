@@ -1,24 +1,53 @@
-<h1>Particle Swarm Optimization</h1>
-<h4>Background</h4>
-<p>
-  In the field of computer science, particle swarm optimization fascinates me because of its simplicity. 
-  The algorithm can be implemented in a very small amount of code, yet is able to search a complex design 
-  space that cannot be minimized by simple differentiation. The name stems from the way that population 
-  variables swarm around each other and influence each other’s movements, much like a flock of birds or a 
-  school of fish. This method works well in numerically minimizing multivariate, nonlinear objective 
-  functions with multiple constraints.
-</p>
-<p>
-    During college, we applied the method to the problem of sizing an offshore Tension Leg Platform (TLP) 
-    to maximize performance while minimizing cost, which I wrote in MATLAB. Below, I’ve rewritten a portion 
-    of the code in a language called Processing to minimize a simple function in the form y = x^2. Obviously, 
-    we can differentiate this function and it is unnecessary to perform numerical methods to minimize, but 
-    this provides an easy example to graph output and watch the population variables ‘swarm’ toward the 
-    global minimum (0,0) to verify that the code functions properly.
-</p>
-<p>
-    Processing allows for the creation of some really cool visuals without a whole lot of code. 
-    (Check out www.openprocessing.org to see some amazing examples.) Below is a screen capture of one part 
-    of the code to get an idea of what the language looks like (I believe it's based on Java), and screenshots 
-    of the visual output.
-</p>  
+<div class="proj-container">
+    <header class="title-container">
+      <div class="proj-title">
+        <h1>Particle Swarm Optimization</h1>
+      </div>
+    </header>
+    <section class="proj-section">
+      <div>
+        <div class="pso-gif">
+          <img src="../img/pso3d.gif" alt="pso two dimensional plot">
+        </div>
+      </div>
+      <div class="proj-desc">
+        <p> 
+        The algorithm can be implemented in a very small amount of code, yet is able to search a complex design 
+        space that cannot be minimized by simple differentiation. The name stems from the way that population 
+        variables swarm around each other and influence each other’s movements, much like a flock of birds or a 
+        school of fish. This method works well in numerically minimizing multivariate, nonlinear objective 
+        functions with multiple constraints.
+        </p>
+        <p>
+        During college, we applied the method to the problem of sizing an offshore Tension Leg Platform (TLP) 
+        to maximize performance while minimizing cost, which I wrote in MATLAB. Below, I’ve rewritten a portion 
+        of the code in a language called Processing to minimize a simple function in the form y = x^2. Obviously, 
+        we can differentiate this function and it is unnecessary to perform numerical methods to minimize, but 
+        this provides an easy example to graph output and watch the population variables ‘swarm’ toward the 
+        global minimum (0,0) to verify that the code functions properly.
+        </p>
+        <p>
+        Processing allows for the creation of some really cool visuals without a whole lot of code. 
+        (Check out www.openprocessing.org to see some amazing examples.) Below is a screen capture of one part 
+        of the code to get an idea of what the language looks like (I believe it's based on Java), and screenshots 
+        of the visual output.
+        </p>  
+      </div>
+    </section>
+    <section class="proj-links">
+      <a href="https://github.com/scott-ammon/processing-pso-algorithm" target="_blank">Github</a>
+    </section>
+    <section class="proj-img-flex">
+      <div>
+        <img src="../img/swarm2d.png" alt="pso two dimensional plot">
+      </div>
+      <div>
+        <img src="../img/swarm3d.png" alt="pso three dimensional plot">
+      </div>
+    </section>
+  </div>
+  <footer class="proj-footer">
+    <a href="/"><h1>Back To Home</h1></a>
+  </footer>
+
+
