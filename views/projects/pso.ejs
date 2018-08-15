@@ -5,33 +5,25 @@
       </div>
     </header>
     <section class="proj-section">
-      <div>
-        <div class="pso-gif">
-          <img src="../img/pso3d.gif" alt="pso two dimensional plot">
-        </div>
+      <div class="pso-gif">
+        <img src="../img/pso3d.gif" alt="pso two dimensional plot">
       </div>
       <div class="proj-desc">
+        <p>
+          I chose to refactor a particle swarm optimization algorithm I had written in MATLAB into a language/visualization library called Processing. The original algorithm 
+          was applied to the problem of sizing an offshore Tension Leg Platform (TLP) to maximize performance while minimizing cost. In order to
+          create the Processing code, I chose to minimize a simple function in the form y = x^2 to start. You can differentiate this 
+          function and it is unnecessary to perform numerical methods to minimize, but this provides an easy example 
+          to graph output and watch the population variables ‘swarm’ toward the global minimum (0,0) to verify that the code is functioning.
+        </p> 
         <p> 
-        The algorithm can be implemented in a very small amount of code, yet is able to search a complex design 
-        space that cannot be minimized by simple differentiation. The name stems from the way that population 
-        variables swarm around each other and influence each other’s movements, much like a flock of birds or a 
-        school of fish. This method works well in numerically minimizing multivariate, nonlinear objective 
-        functions with multiple constraints.
+          The name particle swarm stems from the way that the population variables "swarm" around each other and influence each other’s movements, 
+          much like a flock of birds or a school of fish. This method works well in numerically minimizing multivariate, nonlinear objective 
+          functions with multiple constraints, like the TLP design problem that I previously used this for.
         </p>
         <p>
-        During college, we applied the method to the problem of sizing an offshore Tension Leg Platform (TLP) 
-        to maximize performance while minimizing cost, which I wrote in MATLAB. Below, I’ve rewritten a portion 
-        of the code in a language called Processing to minimize a simple function in the form y = x^2. Obviously, 
-        we can differentiate this function and it is unnecessary to perform numerical methods to minimize, but 
-        this provides an easy example to graph output and watch the population variables ‘swarm’ toward the 
-        global minimum (0,0) to verify that the code functions properly.
+          This was a great way to learn new syntax (Processing uses Java, with some modifications), and refactor some of my code!
         </p>
-        <p>
-        Processing allows for the creation of some really cool visuals without a whole lot of code. 
-        (Check out www.openprocessing.org to see some amazing examples.) Below is a screen capture of one part 
-        of the code to get an idea of what the language looks like (I believe it's based on Java), and screenshots 
-        of the visual output.
-        </p>  
       </div>
     </section>
     <section class="proj-links">

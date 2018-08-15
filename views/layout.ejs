@@ -11,12 +11,9 @@
     <link rel="shortcut icon" href="../img/favicon.ico" />
   </head>
   <body>  
-    <header class="navbar">
-      <!-- <button class="hamburger hamburger--spring" type="button">
-          <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-      </button>   -->
-    </header>
-
+    <!-- Styled div to create circular menu button -->
+    <div class="nav-button"></div>
+    <!-- Nav menu displayed on navbar click -->
     <nav id="nav-menu">
       <div class="nav-links">
         <a href="/">Projects</a>
@@ -24,14 +21,23 @@
         <a href="/resume">Resume</a>
         <div class="bottom-border"></div>
       </div>
-      
       <div class="contact">
-        <a href="https://github.com/scott-ammon" target="_blank"><img src="./img/github.png"></a>
-        <a href="https://www.linkedin.com/in/scottammon/" target="_blank"><img src="./img/linkedin.png"></a>
-        <a href="mailto:scott.o.ammon@gmail.com"><img src="./img/mail.png"></a>
+        <a class="flex-contact" href="https://github.com/scott-ammon" target="_blank">
+          <img src="./img/github.png">
+          <p class="contact-desc">Github</p>
+        </a>
+        <a class="flex-contact" href="https://www.linkedin.com/in/scottammon/" target="_blank">
+          <img src="./img/linkedin.png">
+          <p class="contact-desc">LinkedIn</p>
+        </a>
+        <a class="flex-contact" href="mailto:scott.o.ammon@gmail.com">
+          <img src="./img/mail.png">
+          <p class="contact-desc">Email</p>
+        </a>
       </div>
     </nav>
 
+    <!-- Main page content injected with EJS templates -->
     <main>
       <%- body %>
     </main>

@@ -7,17 +7,19 @@
   <section class="proj-section">
     <div class="proj-desc">
       <p>
-        I used Processing (www.openprocessing.org) to develop a realtime 3D plot of accelerometer output through a serial interface. 
-        The MMA7631 board from Sparkfun connects to my Arduino Uno with a separate analog output for each axis (x, y, z).  The program scales 
-        the analog inputs to represent angles of the ‘x’ and ‘y’ axes between -90 and 90 degrees after establishing zero points with a 
-        batch of readings when the board initializes.
+        Arduino is a single board microcontroller used for hobby electronics. I built this project 
+        to learn how to send serial data from the board to the Processing IDE and make a 3D visual 
+        representation of the data. The MMA7631 acceleromater connects to my Arduino Uno with a separate analog output for each axis (x, y, z).  
+        I wrote code in the Arduino IDE to scale the analog inputs to represent angles of the ‘x’ and ‘y’ axes between -90 and 90 degrees 
+        after establishing zero points with a batch of readings when the board initializes.
       </p>
       <p>
-        I drew a physical case for the board in Rhino, and had it 3D printed out of PLA. I sanded the PLA, applied a layer of XTC-3D, 
-        and applied a flat black paint to finish. I sized the holes for M3 screws, and only had to drill them out slightly due to the print 
-        tolerance and build-up of XTC-3D and paint.
+        I drew a physical case for the board in Rhino3D, and had it 3D printed out of PLA. The images below show the 3D drawing, the actual printed
+        part, and the Processing visualization of the data being sent through the interface. I wrote Processing code to display the three axes, 
+        and a cube to help visualize the current orientation of the accelerometer.
       </p>
     </div>
+    <hr/>
   </section>
   <!-- <section class="proj-links">
     <a href="https://github.com/scott-ammon/processing-pso-algorithm" target="_blank">Github</a>

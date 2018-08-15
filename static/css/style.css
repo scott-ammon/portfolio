@@ -30,7 +30,7 @@ hr {
 }
 
 /* ============== Nav Bar Styles ============== */
-.navbar {
+.nav-button {
   position: fixed;
   top: 1em;
   left: 1em;
@@ -46,25 +46,8 @@ hr {
   background-color: rgb(74, 231, 205);
 }
 
-.hamburger {
-  color: white !important;
-}
-
-.navbar button {
-  position: relative;
-  top: 54%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0;
-}
-
 #nav-menu {
   display: none;
-  /* height: 100vh;
-  width: 50vw;
-  position: absolute;
-  top: 59px;
-  left: 0; */
   background: white;
 }
 
@@ -75,7 +58,7 @@ hr {
 .nav-links,
 .contact {
   width: 300px;
-  margin-left: 15vw;
+  margin-left: 20vw;
   text-align: left;
 }
 
@@ -91,15 +74,23 @@ hr {
   padding-bottom: .5em;
 }
 
-.contact a {
+.contact a img {
   width: 32px;
   height: 32px;
 }
 
-.contact a img {
-  padding: .5em;
-  width: 32px;
-  height: 32px;
+.contact-desc {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-size: 1.25em;
+  margin: 0 0 0 .25em;
+}
+
+.flex-contact {
+  display: flex;
+  margin-bottom: 1em;
+  align-items: center;
 }
 
 .title {
@@ -206,9 +197,14 @@ a {
   margin-bottom: 2em;
 }
 
-.pso-gif img {
-  max-width: 100%;
+.pso-gif {
+  width: 100%;
   margin: 0 auto;
+  text-align: center;
+}
+
+.pso-gif img {
+  max-width: 50%;
 }
 
 .tech-list {
@@ -267,12 +263,12 @@ p.tech-title {
 
 .proj-footer {
   margin: 2em auto 0 auto;
-  padding: 1em 0;
+  padding: 1.5em 0;
   text-align: center;
   background: #0E3B81;
 }
 
-.proj-footer a {
+.proj-footer a h1 {
   display: inline;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -280,7 +276,7 @@ p.tech-title {
   color: white;
 }
 
-.proj-footer:hover a {
+.proj-footer h1:hover {
   transition: color 0.5s ease;
   color: rgb(74, 231, 205);
 }
@@ -358,6 +354,10 @@ p.tech-title {
     margin-bottom: 4em;
   }
 
+  .proj-text h3 {
+    font-size: 4em;
+  }
+
   .proj-title h1 {
     font-size: 1.5em;
   }
@@ -368,14 +368,14 @@ p.tech-title {
     width: 80vw;
   }
 
-  .nav-links,
-  .contact {
-    margin-left: 10vw;
+  .proj-container {
+    width: 70vw;
   }
 
- .proj-container {
-   width: 70vw;
- }
+  .nav-links,
+  .contact {
+    margin-left: 15vw;
+  }
 }
 
 /* tablet size */
@@ -388,6 +388,9 @@ p.tech-title {
     width: 90vw;
   }
 
+  .proj-text h3 {
+    font-size: 3em;
+  }
   /* About Page */
   .about {
     margin: 0 auto;
@@ -402,14 +405,14 @@ p.tech-title {
     margin: 2.5em 0 2em 0;
     max-height: 300px;
   }
+
+  .pso-gif img {
+    max-width: 100%;
+  }
 }
 
 /* mobile devices */
 @media (max-width: 500px) {
-  /* .container {
-    width: 90vw;
-  } */
-
   .header {
     margin: 0;
     text-align: center;
