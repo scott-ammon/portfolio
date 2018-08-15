@@ -316,6 +316,7 @@ a {
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-size: 2.25em;
+  color: rgb(74, 231, 205);
 }
 
 .about-desc {
@@ -333,7 +334,15 @@ a {
 }
 
 /* ==================== MEDIA QUERIES ===================== */
-/* desktop size */
+/* desktop */
+@media (max-width: 1200px) {
+  .flex-about {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+}
+
 @media (max-width: 980px) {
   .container {
     width: 80vw;
@@ -347,12 +356,6 @@ a {
  .proj-container {
    width: 70vw;
  }
-
- .flex-about {
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 100%;
-  }
 
   .proj-title h1 {
     font-size: 1.5em;
@@ -369,9 +372,19 @@ a {
     width: 90vw;
   }
 
+  /* About Page */
+  .about {
+    margin: 0 auto;
+  }
+
   .nav-links,
   .contact {
     margin-left: 5vw;
+  }
+
+  .about-img img {
+    margin: 2.5em 0 2em 0;
+    max-height: 300px;
   }
 }
 
@@ -402,13 +415,6 @@ a {
 
   .proj-text h3 {
     font-size: 2.5em;
-  }
-
-  /* About Page */
-
-  .about-img img {
-    margin: 2.5em 0 2em 0;
-    max-height: 300px;
   }
 
   /* Individual Project Page */
