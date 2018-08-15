@@ -21,6 +21,14 @@ main {
   width: 60vw;
 }
 
+.external-link {
+  color: blue;
+}
+
+hr {
+  margin: 2em 0;
+}
+
 /* ============== Nav Bar Styles ============== */
 .navbar {
   position: fixed;
@@ -179,7 +187,7 @@ a {
 .proj-title {
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .proj-title h1 {
@@ -211,6 +219,7 @@ a {
 
 .tech-flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: left;
   margin: .5em 0;
 }
@@ -223,13 +232,17 @@ a {
   font-weight: bold;
 }
 
+p.tech-title {
+  margin-bottom: .5em;
+}
+
 .proj-desc {
-  margin: 2em auto;
+  line-height: 1.4em;
 }
 
 .proj-links {
-  height: 4em;
-  text-align: left;
+  text-align: center;
+  padding: 2em 0;
 }
 
 .proj-links a {
@@ -302,7 +315,6 @@ a {
 
 .flex-skills {
   display: flex;
-  /* margin: 0 auto; */
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -341,6 +353,14 @@ a {
     align-items: center;
     width: 100%;
   }
+
+  .flex-skills {
+    margin-bottom: 4em;
+  }
+
+  .proj-title h1 {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 980px) {
@@ -356,10 +376,6 @@ a {
  .proj-container {
    width: 70vw;
  }
-
-  .proj-title h1 {
-    font-size: 1.5em;
-  }
 }
 
 /* tablet size */
@@ -410,7 +426,6 @@ a {
 
   .flex-skills {
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .proj-text h3 {

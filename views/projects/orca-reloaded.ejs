@@ -1,22 +1,37 @@
 <div class="proj-container">
   <header class="title-container">
     <div class="proj-title">
-      <h1>ORCA Card Reloaded</h1>
+      <h1>ORCA Card - Reloaded</h1>
     </div>
   </header>
   <section class="proj-section">
     <div class="proj-desc">
       <p>
-        Rebuilding ORCA site to be responsive with React and Redux.
+        The Seattle area <a class="external-link" href="https://orcacard.com">ORCA card website</a> has not 
+        been significantly updated since 2008. It's difficult to use, and is 
+        not responsive. My friend <a class="external-link" href="">Jay</a> and I decided to build a modernized
+        sample version of the site using React. With only one week to complete the project, we
+        aimed for a mobile-first design to demonstrate the ease of use for riders on the go.<br/><br/>
+
+        We also tackled learning Redux to build into our React app. Implementing the centralized store
+        allowed us to easily send and retrieve user & card data to render amongst various componenents.
+        This provides scalability if the app were to be built out to the full functionality of the existing 
+        ORCA site.
+
+        We built a back end using Node, Express, and PostgreSQL to demonstrate how our site may interact
+        with an existing database of ORCA data.
       </p>
+      <hr/>
       <div class="tech-list">
         <div class="tech-flex">
           <p class="tech-title">Front End:</p>
           <p>React</p>
           <p>Redux</p>
-          <p>Mapbox GL JS</p>
+          <p>React Mapbox GL</p>
           <p>Material UI</p>
-          <p>Helmet</p>
+          <p>React-Helmet</p>
+          <p>React-Notifications</p>
+          <p>SASS/SCSS</p>
           <p>JavaScript</p>
         </div>
         <div class="tech-flex">
@@ -25,7 +40,7 @@
           <p>Express</p>
           <p>EJS</p>
           <p>Sequelize</p>
-          <p>Postgres</p>
+          <p>PostgreSQL</p>
         </div>
       </div>
     </div>
