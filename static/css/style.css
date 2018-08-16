@@ -4,13 +4,17 @@ html, body {
 
 body {
   margin: 0;
+  vertical-align: baseline;
+  border: 0;
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
 
 main {
-  height: 100%;
+  min-height: 100%;
+  vertical-align: baseline;
+  border: 0;
 }
 
 .container {
