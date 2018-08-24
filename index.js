@@ -13,35 +13,38 @@ app.use(bp.urlencoded({extended: true}));
 app.use(ejsLayouts);
 
 app.get('/', (req, res) => {
+	res.locals.title = "Scott Ammon | Web Developer";
 	res.render('index');
 });
 
 app.get('/about', (req, res) => {
+	res.locals.title = "Scott Ammon | About";
 	res.render('about');
 });
 
 app.get('/maker-collab', (req, res) => {
+	res.locals.title = "Scott Ammon | Maker-Collab";
 	res.render('projects/maker-collab');
 });
 
 app.get('/nim', (req, res) => {
+	res.locals.title = "Scott Ammon | Nim";
 	res.render('projects/nim');
 });
 
 app.get('/orca-reloaded', (req, res) => {
+	res.locals.title = "Scott Ammon | ORCA";
 	res.render('projects/orca-reloaded');
 });
 
 app.get('/arduino', (req, res) => {
+	res.locals.title = "Scott Ammon | Arduino";
 	res.render('projects/arduino');
 });
 
 app.get('/pso', (req, res) => {
+	res.locals.title = "Scott Ammon | Particle Swarm";
 	res.render('projects/pso');
-});
-
-app.get('/contact', (req, res) => {
-	res.render('contact');
 });
 
 app.get('/resume', (req, res) => {
